@@ -1,0 +1,12 @@
+<div class="container">
+    <div class="left">
+        <h1>{{title}}</h1>
+        <h2>My BNK48</h2>
+        <ul class="bnkNames">
+            <li *ngFor="let bnkName of bnkNames" [class.selected]="bnkName === selectedBnk" (click)="onSelectPerson(bnkName)">
+                <span class="badge">{{bnkName.id}}</span> {{bnkName.name}}
+            </li>
+        </ul>
+    </div>
+    <bnk48-detail [bnk48]="selectedBnk"></bnk48-detail>
+</div>

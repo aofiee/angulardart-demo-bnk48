@@ -1,0 +1,17 @@
+<div *ngIf="bnk48 != null" class="right">
+    <h2>{{bnk48.name}} details!</h2>
+    <div class="group">      
+      <input [(ngModel)]="bnk48.id" placeholder="ID">
+      <span class="highlight"></span>
+      <span class="bar"></span>
+      <label>ID</label>
+    </div>
+    <div class="group">      
+      <input [(ngModel)]="bnk48.name" placeholder="Name">
+      <span class="highlight"></span>
+      <span class="bar"></span>
+      <label>Name</label>
+    </div>
+    <bnk48-photo [bnk48]="bnk48"></bnk48-photo>
+    <button (click)="goBack()">Back</button>
+</div>
