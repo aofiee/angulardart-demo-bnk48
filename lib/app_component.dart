@@ -29,7 +29,7 @@ class AppComponent implements OnInit {
 
 
   void onSelectPerson(Bnk48 person){
-    selectedBnk = person;
+    selectedBnk = person;    
     print(selectedBnk);
   }
 

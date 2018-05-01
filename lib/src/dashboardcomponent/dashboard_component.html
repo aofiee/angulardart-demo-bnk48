@@ -1,8 +1,0 @@
-<h3>Top Members of BNK48</h3>
-<div class="grid grid-pad">
-    <a *ngFor="let member of bnk48" [routerLink]="['MemberDetail', {id: member.id.toString()}]" class="col-1-4">
-        <div class="module hero">
-          <h4>{{member.name}}</h4>
-        </div>
-    </a>
-</div>
